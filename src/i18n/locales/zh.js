@@ -886,6 +886,6 @@ export const zh = {
   sermatec_00897: "请选择设备类型",
   sermatec_00898: "直流电压",
   sermatec_00899: "bms功率",
-
+  sermatec_00900: "终端计量",
 };
      

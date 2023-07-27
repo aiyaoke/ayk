@@ -1,9 +1,9 @@
 const domain = ".sermatec-cloud.com";
 
 export const serve = 1; // 1 国内 0 国外
-export const baseUrl = 'http://192.168.6.9/api' //联想
+// export const baseUrl = 'http://192.168.6.9/api' //联想
 
-// export const baseUrl = `https://${serve ? "api" : "api1"}${domain}`;
+export const baseUrl = `https://${serve ? "api" : "api1"}${domain}`;
 export const socketUrl = `https://${serve ? "www" : "eur"}${domain}`;
 
 export const uploadLogoUrl = `${baseUrl}/zuul/user/uploadHead/`;

@@ -65,12 +65,13 @@
                             <span v-else>-</span>
                         </div>
                         <div v-else-if="item.key === 'sn'">
-                            <el-input
+                            <!-- <el-input
                                 v-if="editItem.id === scope.row.id"
                                 v-model="scope.row.sn"
                                 size="mini"
                             ></el-input>
-                            <span v-else>{{ scope.row.sn }}</span>
+                            <span v-else>{{ scope.row.sn }}</span> -->
+                            <span>{{ scope.row.sn }}</span>
                         </div>
                         <div v-else-if="item.key === 'address'">
                             <el-input

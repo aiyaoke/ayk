@@ -1,6 +1,6 @@
 <template>
   <div class="electricity-statistics">
-    <div class="card-title">{{ $translate("电量统计") }}</div>
+    <div class="card-title">{{ $translate("终端计量") }}</div>
     <div class="card-content">
       <div class="electricity-value">
         <div v-for="item in autoElectricityModels" :key="item.id" v-if="item.enabled">
@@ -8,7 +8,7 @@
             <span class="title">{{ item.desc }}</span>
             <span class="value">{{ item.value }}
             </span>
-            <span class="showDetail-text">{{ $translate("查看详情") }}</span>
+            <!-- <span class="showDetail-text">{{ $translate("查看详情") }}</span> -->
           </div>
           <el-dialog :visible.sync="dialogVisible" top="10vh" background-color="rgb(28,42,53)">
             <Chart :currentData="currentChar" :close="dialogVisible" />
@@ -50,6 +50,7 @@ export default {
   methods: {
 
     openDetails(item) {
+      return;
       this.dialogVisible = true;
       this.currentChar = item;
       // this.$refs.currentChar-ref.clear();
@@ -224,7 +225,7 @@ export default {
     .mask {
       width: 100%;
       height: 100%;
-      cursor: pointer;
+      // cursor: pointer;
       position: absolute;
       left: 0;
       top: 0;

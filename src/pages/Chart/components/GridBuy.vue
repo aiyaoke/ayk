@@ -153,6 +153,7 @@ export default {
             console.log(parseData);
             Object.entries(parseData).forEach((item, index) => {
                 let { type, key, name } = this.seriesName[item[0]];
+                if(name==="电表电量") return;  //去掉电表电量
                 this.chartArgs.options.series.push({
                     type,
                     key,
