@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .point {
+        position: absolute;
+        top: 0;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #fff;
+        border: 0.125rem solid;
+        border-radius: 50%;
+        animation: 3s ease-in-out infinite;
+        offset-distance: 0;
+      }
+      @keyframes arrowAnimation1360 {
+        0% {
+          opacity: 1;
+          border-color: #416de5;
+          box-shadow: 0 0 0 0.125rem #416de555;
+          offset-distance: 0%;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          border-color: #f7a219;
+          box-shadow: 0 0 0 0.125rem #f7a21955;
+          offset-distance: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="position: relative;">
+      <svg
+        data-v-a04682de=""
+        version="1.1"
+        viewBox="0 0 343 38"
+        style="width: 343px; height: 38px;"
+      >
+        <linearGradient id="styleTR" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="50%" style="stop-color: rgb(65, 109, 229);"></stop>
+          <stop offset="100%" style="stop-color: rgb(247, 162, 25);"></stop>
+        </linearGradient>
+        <path
+          fill="none"
+          d="M 2 2 L 2 21 q 2 16 18 16 M 18 37 L 343 37"
+          stroke="url(#styleTR)"
+          stroke-width="2"
+          stroke-dasharray="0"
+          stroke-linecap="round"
+          class="polyLine"
+        ></path>
+      </svg>
+      <div
+        class="point"
+        style='offset-path: path("M 2 2 L 2 21 q 2 16 18 16 M 18 37 L 343 37"); animation-name: arrowAnimation1360;'
+      ></div>
+    </div>
+  </body>
+</html>
