@@ -684,4 +684,8 @@ export const en = {
 
   sermatec_00897: "Please select the device type",
 
+
+
+  sermatec_00901: "急停按钮状态"
+
 };
