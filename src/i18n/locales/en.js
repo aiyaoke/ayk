@@ -686,6 +686,6 @@ export const en = {
 
 
 
-  sermatec_00901: "急停按钮状态"
+  sermatec_00901: "Emergency stop button status"
 
 };
