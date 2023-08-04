@@ -87,7 +87,7 @@ export default {
                 ],
             },
             loadValue: {
-                title: "负载信息",
+                title: "本地负载",
                 data: [
                     { name: "用电总功率", value: "-", key: "totalPower" },
                     { name: "用电功率因数", value: "-", key: "powerFactor" },

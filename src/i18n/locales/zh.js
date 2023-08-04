@@ -163,7 +163,7 @@ export const zh = {
   sermatec_00162: "逆变器状态",
   sermatec_00163: "PV状态",
   sermatec_00164: "电网信息",
-  sermatec_00165: "负载信息",
+  sermatec_00165: "本地负载",
   sermatec_00166: "电池充放电状态",
   sermatec_00167: "温度",
   sermatec_00168: "电压",
